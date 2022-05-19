@@ -34,7 +34,7 @@ $ <span class="nb">source</span> env/bin/activate
 Finished!
 </code></pre>
 <p>Essentially, the script makes a request to <a href="https://en.wikipedia.org/wiki/Wikipedia:Random">Wikipedia:Random</a> -- <code>https://en.wikipedia.org/wiki/Special:Random</code> -- for information about the random article using <a href="http://www.seleniumhq.org/projects/webdriver/">Selenium</a> to automate interaction with the site and <a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a> to parse the HTML.</p>
-<p>It's a modified version of the scraper built in the <a href="/blog/building-a-concurrent-web-scraper-with-python-and-selenium">Building A Concurrent Web Scraper With Python and Selenium</a> tutorial. Please review the tutorial along with the code from the script for more info.</p>
+
 <h2 id="configuring-selenium-grid">Configuring Selenium Grid</h2>
 <p>Next, let's spin up <a href="https://www.selenium.dev/documentation/en/grid/">Selenium Grid</a> to simplify the running of the script in parallel on multiple machines. We'll also use Docker and Docker Compose to manage those machines with minimal installation and configuration.</p>
 <p>Add a <em>docker-compose.yml</em> file to the root directory:</p>
